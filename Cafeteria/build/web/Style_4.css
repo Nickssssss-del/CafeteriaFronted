@@ -1,0 +1,118 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #F5F1E9;
+}
+
+/* HEADER */
+header {
+    background-color: #26382E;
+    color: #F5F1E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #F5F1E9;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #BFD9C3;
+}
+
+/* FORMULARIO */
+.main-container {
+    padding: 40px 20px;
+}
+
+.cuadro-registro {
+    max-width: 420px;
+    margin: auto;
+    background-color: #E5D7CC;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.titulo-registro {
+    text-align: center;
+    color: #26382E;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+.etiqueta {
+    font-weight: bold;
+}
+
+.input-form {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #BFD9C3;
+    background-color: #F5F1E9;
+}
+
+.boton-enviar {
+    width: 100%;
+    background-color: #8FAF9C;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.boton-enviar:hover {
+    background-color: #26382E;
+}
+
+/* FOOTER */
+.f-pie {
+    background: #26382E;
+    color: #F5F1E9;
+    padding: 20px 5%;
+}
+
+.f-pie p { font-size: 0.9rem; margin: 8px 0; }
+
+.f-fila {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.f-columna {
+    flex: 1;
+    min-width: 200px;
+}
+
+.f-derechos {
+    text-align: center;
+    margin-top: 20px;
+    opacity:0.6;
+}
+
+

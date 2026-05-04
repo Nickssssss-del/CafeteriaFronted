@@ -1,0 +1,160 @@
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #F5F1E9;
+}
+
+/* HEADER */
+header {
+    background-color: #26382E;
+    color: #F5F1E9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 70px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* MENÚ */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu a {
+    color: #F5F1E9;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #BFD9C3;
+}
+
+/* SECCIÓN HORARIO Y UBICACIÓN */
+.seccion-info-doble {
+    padding: 40px 10px;
+    background-color: #F5F1E9;
+}
+
+.contenedor-columnas {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.columna-cuadro {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.titulo-seccion {
+    color: #26382E;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.cuadro-azul {
+    background-color: #E5D7CC;
+    border: 2px solid #26382E;
+    border-radius: 10px;
+    padding: 20px;
+    min-height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lista-horarios p {
+    color: #26382E;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.texto-direccion {
+    color: #26382E;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* MAPA */
+.contenedor-mapa {
+    width: 100%;
+    height: 200px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 1px solid #BFD9C3;
+}
+
+.contenedor-mapa iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* FOOTER */
+.f-pie {
+    background: #26382E;
+    color: #F5F1E9;
+    padding: 20px 5%;
+}
+
+.f-fila {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.f-columna {
+    flex: 1;
+    min-width: 200px;
+}
+
+.f-pie h2 {
+    font-size: 1.8rem;
+}
+
+.f-pie h3 {
+    margin-bottom: 15px;
+}
+
+.f-pie p {
+    font-size: 0.9rem;
+    margin: 8px 0;
+}
+
+/* DERECHOS (ligeramente transparente) */
+.f-derechos {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.f-derechos p {
+    opacity: 0.6;
+}
+
+.f-derechos hr {
+    border: 0;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 10px;
+}
+
