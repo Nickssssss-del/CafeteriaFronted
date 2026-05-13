@@ -5,6 +5,13 @@ body {
     background-color: #F5F1E9;
 }
 
+body h1 {
+    text-align: center;          /* centra el texto */
+    color: #1f3b2d;              /* verde bosque */
+    font-weight: bold;            /* opcional: más resaltado */
+    margin: 20px 0;               /* opcional: espacio arriba y abajo */
+}
+
 /* HEADER */
 header {
     background-color: #26382E;
@@ -41,66 +48,95 @@ header {
 .menu a:hover {
     color: #BFD9C3;
 }
+/* Contenedor de la tarjeta más rectangular */
+.marco-imagen {
+    width: 100%;
+    max-width: 1200px;       /* ancho máximo más grande para rectangular */
+    aspect-ratio: 21/9;     /* más ancho que alto */
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 30px auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    cursor: pointer;
+}
+
+/* Imagen dentro del contenedor */
+.imagen-dinamica {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Llena el contenedor sin deformar */
+    display: block;
+    transition: transform 0.5s;
+}
+
+/* Hover: elevación y zoom ligero */
+.marco-imagen:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.marco-imagen:hover .imagen-dinamica {
+    transform: scale(1.05);
+}
 
 /* SECCIÓN HORARIO Y UBICACIÓN */
 .seccion-info-doble {
-    padding: 40px 10px;
+    padding: 60px 10px; /* más espacio arriba y abajo */
     background-color: #F5F1E9;
 }
 
+/* Contenedor de columnas */
 .contenedor-columnas {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 200px; /* más separación entre columnas */
     flex-wrap: wrap;
 }
 
+/* Cada columna / tarjeta */
 .columna-cuadro {
     flex: 1;
-    min-width: 320px;
-    max-width: 500px;
+    min-width: 300px;  /* menor para que sea responsive */
+    max-width: 650px;  /* ancho máximo equilibrado */
     text-align: center;
 }
 
-.titulo-seccion {
-    color: #26382E;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 12px;
-    text-transform: uppercase;
-}
-
+/* Tarjeta de horarios más espaciosa */
 .cuadro-azul {
     background-color: #E5D7CC;
     border: 2px solid #26382E;
-    border-radius: 10px;
-    padding: 20px;
-    min-height: 260px;
+    border-radius: 20px;
+    padding: 20px 30px;   /* más espacio interno horizontal y vertical */
+    min-height: 300px;    /* altura mínima mayor */
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+/* Listado de horarios con más espacio entre líneas */
 .lista-horarios p {
     color: #26382E;
     font-size: 16px;
-    margin: 10px 0;
+    margin: 12px 0;      /* aumenta el espacio entre cada día */
+    line-height: 1.6;    /* hace el texto más respirable */
 }
 
+/* Texto dirección */
 .texto-direccion {
     color: #26382E;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 20px; /* más espacio debajo del título */
 }
 
-/* MAPA */
+/* Contenedor de mapa */
 .contenedor-mapa {
     width: 100%;
-    height: 200px;
-    border-radius: 6px;
+    height: 250px; /* más alto para equilibrio visual */
+    border-radius: 12px;
     overflow: hidden;
     border: 1px solid #BFD9C3;
 }
@@ -157,4 +193,5 @@ header {
     border-top: 1px solid rgba(255,255,255,0.1);
     margin-bottom: 10px;
 }
+
 
