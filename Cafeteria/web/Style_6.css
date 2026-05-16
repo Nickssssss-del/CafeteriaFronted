@@ -92,13 +92,13 @@ header img {
 
     /* Animación */
     transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94),
-        opacity 0.4s ease;
-    opacity: 2.5;
+        opacity 0.2s ease;
+    opacity: 1;
 }
 
 .divider-deco:hover {
-    width: 200px;
-    opacity: 2;
+    width: 160px;
+    opacity: 1;
 }
 
 .text-carta {
