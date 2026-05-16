@@ -103,6 +103,9 @@ header{
     display:grid; /* Activa CSS Grid */
     grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); 
     /* Crea columnas automáticas adaptables */
+    background: #F5F1E9; /* Espuma de Leche */
+    padding: 20px;
+    border-radius: 12px;
     gap:25px; /* Espacio entre tablas */
     margin:40px 0; /* Espacio vertical */
     
@@ -113,10 +116,11 @@ header{
 table{
     width:100%; /* Ocupa todo el espacio disponible */
     border-collapse:collapse; /* Une bordes */
-    background:white; /* Fondo blanco */
+    background:#E5D7CC;/* Fondo blanco */
     border-radius:12px; /* Bordes redondeados */
     overflow:hidden; /* Oculta desbordes */
     box-shadow:0 10px 25px rgba(0,0,0,0.15); /* Sombra elegante */
+    transition: background 0.3s ease; 
 }
 
 /* CELDAS */
@@ -125,32 +129,37 @@ table{
 td, th{
     padding:14px; /* Espacio interno */
     text-align:center; /* Centra el texto */
-    border-bottom:1px solid  ; /* Línea separadora */
+    border-bottom: 1px solid #BFD9C3 ; /* Línea separadora */
+    transition: background 0.3s ease, color 0.3s ease;
 }
 
 /* ENCABEZADO */
 thead{
-    background:#26382E; /* Fondo */
-    color:white;
+     background: #26382E; /* Bosque Profundo */
+    color: #F5F1E9; /* Espuma de Leche */
     text-transform:uppercase; /* Texto en mayúsculas */
 }
 
 /* CUERPO */
 tbody{
-    background:#fdf6f0; /* Fondo claro */
+    background: #E5D7CC; /* Café Latte */
 }
 
 /* HOVER */
-tr:hover{
-    background:#26382E; /* Cambia color al pasar mouse */
-    color:white; /* Texto blanco */
+ tbody tr:hover{
+   background: linear-gradient(90deg, #BFD9C3, #E5D7CC); /* Bruma Matinal → Café Latte */
+    color: #26382E; /* Bosque Profundo */
+    transform: scale(1.01); /* Pequeño “pop” al pasar mouse */
+    transition: all 0.4s ease;
+
 }
 
 
 /* PIE */
 tfoot{
-    background:#667E6B; /* Color distinto para el pie */
-    color:white; /* Texto blanco */
+   background: #667E6B; /* Hoja de Cafeto */
+    color: #F5F1E9;
+    transition: background 0.3s ease;
 }
 
  /* ===== RESPONSIVE ===== */
