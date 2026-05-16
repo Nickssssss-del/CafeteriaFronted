@@ -1,0 +1,33 @@
+.logo{
+    width: 70px;              /* Tamaño del logo */
+    vertical-align: middle;   /* Alinea el logo con el texto */
+}
+
+.logo-area {
+    display: flex;            /* Contenedor flexible */
+    align-items: center;      /* Centra verticalmente */
+    padding: 0px;
+}
+
+/* Menú */
+.menu{
+    display:flex;              
+    gap:20px;                  
+    background-color:#26382E;  /* CAMBIO: Fondo Bosque Oscuro */
+    padding:8px;  
+}
+
+/* Enlaces del menú */
+.menu a{
+    color:#F5F1E9;            /* CAMBIO: Texto Crema */
+    font-weight:bold;       
+    text-decoration:none;
+    transition: 0.3s;
+    padding: 4px 10px;
+    border-radius: 8px;
+}
+
+.menu a:hover{
+    color:#26382E;
+    background:#BFD9C3;
+}
