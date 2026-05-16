@@ -16,7 +16,7 @@ body{
     padding:0;   /* Le quita el espacio o aumenta al texto */                   
     color:#26382E;                   
     background-color:#F5F1E9;        
-    height:100%;
+    height:100%; /*Altura*/
 }
 
 /* Contenedor principal */
@@ -27,7 +27,7 @@ body{
 }
 
 .banner-img {
-    width: 100%;
+    width: 100%; /*Ancho*/
     height: 100vh; /* <--- CRÍTICO: Si no pones altura, el texto empuja la imagen hacia abajo */
     
     /* Imagen y capa oscura */
@@ -230,7 +230,7 @@ margin: 10px 0;
   background: #26382E;
   color: #F5F1E9;
   padding: 12px 24px;
-  text-decoration: none;
+  text-decoration: none; /*Eliminar decoraciones, subrayado de enlace*/
   border-radius: 8px;
   transition: 0.3s;
   font-weight: bold;
@@ -264,7 +264,7 @@ margin: 10px 0;
 
 .f-columna { 
     flex: 1;
-    min-width: 200px; 
+    min-width: 200px; /*Define el ancho mínimo que puede tener un elemento*/
     gap: 40px; /*sirve para agregar espacio entre elementos de un contenedor*/
 }
 
@@ -273,8 +273,10 @@ margin: 10px 0;
     margin-bottom: 15px; 
 }
 
-.f-pie h2 { font-family: 'Arial';
-font-size: 1.8rem; }
+.f-pie h2 { 
+    font-family: 'Arial';
+    font-size: 1.8rem;
+ }
 
 .f-pie p { font-size: 0.9rem; margin: 8px 0; }
 
