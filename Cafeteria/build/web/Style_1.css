@@ -64,19 +64,22 @@ body{
     display:flex;              
     gap:20px;                  
     background-color:#26382E;  /* CAMBIO: Fondo Bosque Oscuro */
-    padding:15px;  
+    padding:8px;  
 }
 
 /* Enlaces del menú */
 .menu a{
     color:#F5F1E9;            /* CAMBIO: Texto Crema */
     font-weight:bold;       
-    text-decoration:none;   
+    text-decoration:none;
     transition: 0.3s;
+    padding: 4px 10px;
+    border-radius: 5px;
 }
 
 .menu a:hover{
-    color: #BFD9C3;           /* MAGIA: Verde bruma al pasar el mouse */
+    color:#26382E;
+    background:#BFD9C3;
 }
 
 /* Encabezado */
@@ -137,9 +140,12 @@ header{
 .img2, .img3 {
     width: 100%;
     max-width: 600px;
-    border-radius: 10px;
-    height: auto; /* Mantiene la proporción */
+    border-radius: 15px;
+    height: auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
 }
+
 
 .content2 {
     background: #26382E;
@@ -225,7 +231,15 @@ margin: 10px 0;
   color: #F5F1E9;
   padding: 12px 24px;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.boton:hover {
+    background: #BFD9C3;
+    color: #26382E;
+    transform: scale(1.05);
 }
 
 .contenedor-botones {
