@@ -1,12 +1,11 @@
 .logo{
-    width:70px; /* Tamaño del logo */
-    vertical-align:middle; /* Alinea el logo con el texto en la misma línea */
+    width: 70px;              /* Tamaño del logo */
+    vertical-align: middle;   /* Alinea el logo con el texto */
 }
 
-/* Logo y texto en línea */
 .logo-area {
-    display: flex;
-    align-items: center;    /* Centra el logo verticalmente en su contenedor */
+    display: flex;            /* Contenedor flexible */
+    align-items: center;      /* Centra verticalmente */
     padding: 0px;
 }
 
@@ -14,9 +13,9 @@
 body{
     font-family:'Arial'; 
     margin:0;                       
-    padding:0;                      
-    color:#26382E;                   /* CAMBIO: Texto en Bosque Oscuro (más elegante) */
-    background-color:#F5F1E9;        /* CAMBIO: Fondo Papel Crema para calidez */
+    padding:0;   /* Le quita el espacio o aumenta al texto */                   
+    color:#26382E;                   
+    background-color:#F5F1E9;        
     height:100%;
 }
 
@@ -33,6 +32,7 @@ body{
     
     /* Imagen y capa oscura */
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                /*Linear-gradient: crea un degradado de colores en línea recta*/
                 url('Imagenes/Imagen1_1.jpeg'); 
     background-size: cover;
     background-position: center;
@@ -50,8 +50,8 @@ body{
 }
 
 .banner-text h1 {
-    font-size: 7rem;      /* Antes era de 7rem, ahora es más grande */
-    font-weight: bold;    /* Para que se vea más imponente */
+    font-size: 7rem;      
+    font-weight: bold;    /* negrita */
     margin: 0;
 }
 
@@ -84,7 +84,7 @@ header{
     background-color:#26382E; /* CAMBIO: Fondo Bosque Oscuro (Clase total) */
     color:#F5F1E9;            
     display:flex;             
-    justify-content:space-between; 
+    justify-content:space-between;  
     align-items:center;       
     padding: 10px 20px;       /* Ajuste de espacio para que no esté pegado */
 }
@@ -104,7 +104,7 @@ header{
     padding: 40px 10%;               
     display:flex;            
     justify-content:center; 
-    align-items:flex-start; 
+    align-items:flex-start; /*alinea los elementos al inicio del contenedor*/
     gap:40px;               
 }
 /* Estilo para el título en Laptop */
@@ -124,7 +124,7 @@ header{
     flex: 1; /* Toma la mitad del espacio */
     text-align: left;
     position: relative;
-    align-self: center;
+    align-self: center; /*centra un elemento específico*/
 }
 
 .right-column {
@@ -251,7 +251,7 @@ margin: 10px 0;
 .f-columna { 
     flex: 1;
     min-width: 200px; 
-    gap: 40px;
+    gap: 40px; /*sirve para agregar espacio entre elementos de un contenedor*/
 }
 
 .f-pie h3 { 
