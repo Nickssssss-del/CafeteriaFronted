@@ -4,7 +4,7 @@ body {
     /* Elimina el margen por defecto */
     padding: 0;
     /* Elimina el padding por defecto */
-    font-family: 'Arial', serif;
+    font-family: 'Poppins', serif;
     /* Fuente principal del sitio */
     background: linear-gradient(to right, #f5eee6, #efe4d8);
     /* Fondo con degradado horizontal */
@@ -318,4 +318,26 @@ tfoot {
     /* Deja espacio debajo de la linea */
     margin-bottom: 10px;
     opacity: 0.6;
+}
+
+/* Móvil < 768px */
+@media (max-width: 768px) {
+  .contenedor-tablas {
+    flex-direction: column;
+    align-items: center;
+  }
+  table {
+    width: 90%;
+  }
+  nav.menu {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Tablet < 1024px */
+@media (max-width: 1024px) {
+  .contenedor-tablas {
+    grid-template-columns: repeat(2, 1fr); /* o flex-wrap */
+  }
 }
