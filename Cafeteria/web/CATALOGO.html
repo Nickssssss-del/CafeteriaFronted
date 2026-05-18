@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link href="Style_6.css" rel="stylesheet" type="text/css"/>
+    <link href="Style_header.css" rel="stylesheet" type="text/css"/>
+    <link href="Style_Footer.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
     <header>
@@ -101,7 +103,7 @@
 
                 <div class="card" data-id="4" data-nombre="Café Pasado" data-categoria="clasicos" data-estacion="invierno" data-precio="11" data-fecha="2025-02-20">
                     <button class="fav-btn">♡</button>
-                    <img src="Clasicos/cafe_pasado.jpg" alt="Café Pasado"/>
+                    <img src="Clasicos/cafepasado.png" alt="Café Pasado"/>
                     <h3>Café Pasado</h3>
                     <p class="text-card">Preparación tradicional, equilibrado y aromático.</p>
                     <p>S/ 11.00</p>
@@ -117,7 +119,7 @@
 
                 <div class="card" data-id="6" data-nombre="Latte" data-categoria="clasicos" data-estacion="invierno" data-precio="14" data-fecha="2025-02-20">
                     <button class="fav-btn">♡</button>
-                    <img src="Clasicos/download_1.jpg" alt="Latte"/>
+                    <img src="Clasicos/latte.jpeg" alt="Latte"/>
                     <h3>Latte</h3>
                     <p class="text-card">Suave, cremoso y reconfortante, ideal para cualquier momento.</p>
                     <p>S/ 14.00</p>
@@ -175,7 +177,7 @@
                 <!-- ===== ESPECIALES ===== -->
                 <div class="card" data-id="13" data-nombre="Chocolate Caliente Artesanal" data-categoria="especiales" data-estacion="invierno" data-precio="12" data-fecha="2025-02-20">
                     <button class="fav-btn">♡</button>
-                    <img src="Calientes/download_1.jpg" alt="Chocolate Caliente Artesanal"/>
+                    <img src="Calientes/chocolate.jpeg" alt="Chocolate Caliente Artesanal"/>
                     <h3>Chocolate Caliente Artesanal</h3>
                     <p class="text-card">Chocolate derretido con leche cremosa y toque casero.</p>
                     <p>S/ 12.00</p>
@@ -191,7 +193,7 @@
 
                 <div class="card" data-id="15" data-nombre="Chai Latte" data-categoria="especiales" data-estacion="invierno" data-precio="15" data-fecha="2025-02-20">
                     <button class="fav-btn">♡</button>
-                    <img src="Calientes/download.jpg" alt="Chai Latte"/>
+                    <img src="Calientes/chailatte.png" alt="Chai Latte"/>
                     <h3>Chai Latte</h3>
                     <p class="text-card">Infusión especiada con leche caliente, exótica y reconfortante.</p>
                     <p>S/ 15.00</p>
@@ -241,7 +243,7 @@
 
                 <div class="card" data-id="21" data-nombre="Limonada Frozen" data-categoria="refrescante" data-estacion="verano" data-precio="13" data-fecha="2025-02-20">
                     <button class="fav-btn">♡</button>
-                    <img src="Bebidas refrescantes/pngtree-mexican-cocktail-lemonade-png-image_10255941.png" alt="Limonada Frozen"/>
+                    <img src="Bebidas refrescantes/LimonadaFrozen.jpeg" alt="Limonada Frozen"/>
                     <h3>Limonada Frozen</h3>
                     <p class="text-card">Granizada y perfecta para días calurosos.</p>
                     <p>S/ 13.00</p>
@@ -249,7 +251,7 @@
 
                 <div class="card" data-id="22" data-nombre="Limonada de Hierbabuena" data-categoria="refrescante" data-estacion="all" data-precio="14" data-fecha="2025-02-20">
                     <button class="fav-btn">♡</button>
-                    <img src="Bebidas refrescantes/images.jpg" alt="Limonada de Hierbabuena"/>
+                    <img src="Bebidas refrescantes/Hierbabuena.jpeg" alt="Limonada de Hierbabuena"/>
                     <h3>Limonada de Hierbabuena</h3>
                     <p class="text-card">Frescura con un toque herbal.</p>
                     <p>S/ 14.00</p>
@@ -429,6 +431,10 @@
                 localStorage.setItem("favoritos", JSON.stringify(favoritos));
                 if (mostrandoFavoritos) filtrar();
             });
+                        btn.classList.remove("pop");
+            void btn.offsetWidth; // fuerza el re-render para que funcione si se hace click rápido
+            btn.classList.add("pop");
+            btn.addEventListener("animationend", () => btn.classList.remove("pop"), { once: true });
         });
 
         /* VER FAVORITOS */
