@@ -429,6 +429,10 @@
                 localStorage.setItem("favoritos", JSON.stringify(favoritos));
                 if (mostrandoFavoritos) filtrar();
             });
+             btn.classList.remove("pop");
+            void btn.offsetWidth; // fuerza el re-render para que funcione si se hace click rápido
+            btn.classList.add("pop");
+            btn.addEventListener("animationend", () => btn.classList.remove("pop"), { once: true });
         });
 
         /* VER FAVORITOS */
