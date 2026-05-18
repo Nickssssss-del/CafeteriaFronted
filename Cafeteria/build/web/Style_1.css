@@ -3,7 +3,7 @@ header{
     background-color:#26382E;
     color:#F5F1E9;            
     display:flex;             
-    justify-content:space-between;  
+    justify-content:space-between;  /*Dejando un espacio al medio*/
     align-items:center;      
     padding: 10px 20px;       /* Ajuste de espacio para que no esté pegado */
 }
@@ -124,7 +124,7 @@ body{
 
 .content2 h2 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 40px; /*Espacio debajo del elemento*/
 }
 
 .cards-container {
@@ -202,7 +202,7 @@ body{
 .boton:hover {
     background: #BFD9C3;
     color: #26382E;
-    transform: scale(1.05);
+    transform: scale(1.05); /*Scale deforma el elemento 1 tamaño normal, 5% más grande*/
 }
 
 .contenedor-botones {
@@ -395,13 +395,13 @@ body{
     /* IMÁGENES MEJOR AJUSTADAS */
     .img2,
     .img3{
-        display:block;
+        display:block; /*Para que ocupe toda la linea*/
         width:100%;
         max-width:360px;
         aspect-ratio:4/3;
         margin:0 auto;
-        object-fit:cover;
-        object-position:center;
+        object-fit:cover;  /*hace que la imagen llene el espacio sin deformarse*/
+        object-position:center; /*centra la imagen dentro del espacio*/
         border-radius:15px;
     }
 
