@@ -3,7 +3,7 @@
 .f-pie {
     background: #26382E;
     color: #F5F1E9;
-    padding: 5px 5%;
+    padding: 20px 5%;
     font-family: sans-serif;
 }
 
@@ -11,13 +11,12 @@
 .f-fila {
     display: flex;
     justify-content: space-between; 
-    gap: 40px;
+    gap: 25px;
 }
 
 .f-columna { 
     flex: 1;
-    min-width: 200px; /*Define el ancho mínimo que puede tener un elemento*/
-    gap: 40px; /*sirve para agregar espacio entre elementos de un contenedor*/
+    min-width: 180px; /*Define el ancho mínimo que puede tener un elemento*/
 }
 
 .f-pie h3 { 
@@ -34,7 +33,7 @@
 
 .f-derechos { 
     text-align: center; 
-    margin-top: 30px; 
+    margin-top: 15px; 
     opacity: 0.7; 
 }
 
@@ -42,6 +41,84 @@
     border: 0; 
     border-top: 1px solid rgba(255,255,255,0.1); 
     /* Deja espacio debajo de la linea */
-    margin-bottom: 10px; 
+    margin-bottom: 8px; 
     opacity:0.6;
+}
+
+/* -------- TABLETS -------- */
+@media (max-width:768px){
+
+    .f-fila{
+        flex-wrap: wrap; /* Permite bajar columnas */
+        gap: 30px;
+    }
+
+    .f-columna{
+        min-width: 250px;
+    }
+
+    .f-pie h2{
+        font-size: 1.5rem;
+    }
+
+    .f-pie h3{
+        font-size: 1.1rem;
+    }
+
+    .f-pie p{
+        font-size: 0.9rem;
+    }
+}
+
+
+/* -------- CELULARES -------- */
+@media (max-width:480px){
+
+    .f-pie{
+        padding:20px 6%;
+    }
+
+    .f-fila{
+        display:grid;
+        /*Para dividir en dos columnas iguales*/
+        grid-template-columns:1fr 1fr;
+        gap:18px;
+    }
+
+    /* Bruma Café arriba */
+    .f-columna:first-child{
+        grid-column:1 / 3;
+        text-align:center;
+        margin-bottom:8px;
+    }
+
+    .f-columna{
+        min-width:0; /* evita cortes raros */
+    }
+
+    .f-pie h2{
+        font-size:1rem;
+        margin-bottom:8px;
+    }
+
+    .f-pie h3{
+        font-size:0.8rem;
+        margin-bottom:6px;
+    }
+
+    .f-pie p{
+        font-size:0.7rem;
+        line-height:1.5;
+        margin:3px 0;
+        word-break:break-word;
+    }
+
+    .f-derechos{
+        margin-top:12px;
+        text-align:center;
+    }
+
+    .f-derechos p{
+        font-size:0.6rem;
+    }
 }
